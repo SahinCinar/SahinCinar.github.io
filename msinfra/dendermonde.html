@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <title>Sahin Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dendermonde.css">
+  </head>
+  <body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="alert alert-primary text-center">
+                    <a href="knokke.html">Knokke</a>,<a href="waasland.html">Waasland</a>,<a href="dendermonde.html" id="den">Dendermonde</a>,<a href="willebroek.html">Willebroek</a>
+                </h1>
+                <h5>Made by <a href="https://sahincinar.github.io/" target="_blank">Sahin Cinar</a></h5>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="form">
+                            <input type="hidden" name="id" id="id">
+                            <label for="">Ploegbaas</label>
+                            <input type="text" placeholder="Ploegbaas" class="form-control" name="team" id="team" required>
+                            <br>
+                            <label for="">Naam</label>
+                            <input type="text" placeholder="Naam" class="form-control" name="name" id="name" required>
+                            <br>
+                            <label for="">Leeftijd</label>
+                            <input type="number" placeholder="Leeftijd" class="form-control" name="age" id="age" required>
+                            <br>
+                            <label for="">Adres</label>
+                            <textarea name="address" placeholder="Adres" id="address" cols="30" rows="5" required class="form-control"></textarea>
+                            <br>
+                            <label for="">Tel</label>
+                            <input type="text" placeholder="Tel" class="form-control" id="phone" name="phone" required>
+                            <br>
+                            <button class="btn btn-sm btn-primary" type="button" onclick="save()">Opslaan</button>
+                            <button class="btn btn-sm btn-primary" type="button" onclick="clearData()">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="datatable" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Team</th>
+                                        <th>Naam</th>
+                                        <th>Leeftijd</th>
+                                        <th>Adres</th>
+                                        <th>Tel</th>
+                                        <th>Bewerk</th>
+                                        <th>Verwijder</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table">
+        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="all_data3.js"></script>
+    <script src="save3.js"></script>
+    <script src="find3.js"></script>
+    <script src="remove3.js"></script>
+    <script>
+        allData3()
+    </script>
+    <script>
+        function clearData(){
+            document.getElementById('form').reset()
+            document.getElementById('id').value = ""
+        }
+    </script>
+  </body>
+</html>
