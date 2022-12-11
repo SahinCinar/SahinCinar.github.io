@@ -1,0 +1,1773 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: unset;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "Space600";
+    src: url('../fonts/Space_Grotesk/SpaceGrotesk-SemiBold-600.woff2') format('woff2'), 
+    url('../fonts/Space_Grotesk/SpaceGrotesk-SemiBold-600.woff') format('woff');
+        font-weight: 600;
+        font-style: sans-serif;
+}
+@font-face {
+    font-family: "Adelle500";
+    src: url('../fonts/Adelle-Sans/adelle-sans-bold-500.woff2') format('woff2'), 
+    url('../fonts/Adelle-Sans/adelle-sans-bold-500.woff') format('woff');
+        font-weight: bold;
+        font-style: sans-serif;
+}
+@font-face {
+    font-family: "Space500";
+    src: url('../fonts/Space_Grotesk/SpaceGrotesk-Medium-500.woff2') format('woff2'), 
+    url('../fonts/Space_Grotesk/SpaceGrotesk-Medium-500.woff') format('woff');
+        font-weight: 500;
+        font-style: sans-serif;
+}
+@font-face {
+    font-family: "Space300";
+    src: url('../fonts/Space_Grotesk/SpaceGrotesk-Light-300.woff2') format('woff2'), 
+    url('../fonts/Space_Grotesk/SpaceGrotesk-Light-300.woff2') format('woff');
+        font-weight: 300;
+        font-style: sans-serif;
+}
+@font-face {
+    font-family: "Adelle300";
+    src: url('../fonts/Adelle-Sans/adelle-sans-regular-300.woff2') format('woff2'), 
+    url('../fonts/Adelle-Sans/adelle-sans-regular-300.woff') format('woff');
+        font-weight: 300;
+        font-style: sans-serif;
+}
+h1, h2, h3{
+    font-family: "Space600";
+    font-weight: 600;
+}
+h4{
+    font-family: "Space500";
+    font-weight: 500;
+}
+/* Header Page*/
+header{
+    margin: 1rem 1.5rem 0 1.5rem;
+}
+@media (min-width: 96.25rem){
+    header{
+        max-width: 96.25rem;
+        margin: 0 auto;
+    }
+}
+.header__info ul{
+    display: flex;
+    font-family: "Adelle300";
+    margin-bottom: 1.8rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-style: sans-serif;
+}
+@media (min-width: 21.25rem){
+    .header__info ul{
+        justify-content: flex-start;
+    }
+}
+@media (min-width: 75.9rem){
+    .header__info ul{
+        justify-content: space-between;
+    }
+}
+@media (min-width: 96.25rem){
+    .header__info ul{
+        margin-top: 1.5rem;
+    }
+}
+@media (min-width: 21.25rem){
+    .header__info ul a{
+        margin-right: 2rem;
+    }
+}
+.header__info li{
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 40rem){
+    .header__info li{
+        font-size: 0.9rem;
+    }
+}
+.header__info ul span li{
+    display: none;
+}
+@media (min-width: 75.9rem){
+    .header__info ul span li{
+        display: flex;
+        margin-right: 2rem;
+    }
+}
+@media (min-width: 75.9rem){
+    .header__info ul span{
+        margin-right: 7%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.header__info li svg{
+    margin-right: 0.2rem;
+}
+.header__info a{
+    text-decoration-line: underline;
+}
+.header__img{
+    display: block;
+    flex-wrap: wrap;
+}
+@media (min-width: 61.9rem){
+    .header__img{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+}
+.header__img img{
+    height: 50%;
+    width: 50%;
+}
+@media (min-width: 61.9rem){
+    .header__img img{
+        width: 250px;
+    }
+}
+.header__links ul{
+    display: flex;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: hsl(158, 100%, 26%);
+    font-family: "Adelle300";
+    font-weight: 300;
+}
+@media (min-width: 36.2rem){
+    .header__links ul{
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 61.9rem){
+    .header__links ul{
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+}
+.header__links li{
+    width: 50%;
+    text-align: center;
+    border: 1px solid hsl(158, 100%, 26%);
+}
+@media (min-width: 40rem){
+    .header__links li{
+        font-size: 1.1rem;
+        padding: 0.37rem;
+    }
+}
+@media (min-width: 61.875rem){
+    .header__links li{
+        font-size: 1.17rem;
+        padding: 0.37rem;
+    }
+}
+@media (min-width: 61.9rem){
+    .header__links li{
+        color: hsl(0, 0%, 0%);
+        border: none;
+        padding: 0;
+        width: auto;
+    }
+}
+@media (min-width: 61.9rem){
+    .header__links .orange{
+        background-color: hsl(16, 100%, 61%);
+        display: flex;
+        padding: 0.9rem;
+        color: hsl(100, 100%, 100%);
+        margin: 0;
+    }
+}
+.header__links ul li a{
+    text-align: center;
+}
+@media (min-width: 61.9rem){
+    .header__links ul li a{
+        margin-right: 2rem;
+    }
+}
+@media (min-width: 61.9rem){
+    .header__links ul li a:hover{
+        color: hsl(158, 100%, 26%);
+    }
+}
+@media (min-width: 61.9rem){
+    .header__links ul li .orange:hover{
+        background-color: hsl(16, 100%, 70%) !important;
+        color: hsl(0, 0%, 100%) !important;
+    }
+}
+/* Footer Page */
+/* Footer lightgreen */
+@media (min-width: 96.25rem){
+    footer{
+        margin: 0 auto;
+        background-color: hsl(166, 45%, 14%);
+    }
+}
+@media (min-width: 96.25rem){
+    .resizing{
+        max-width: 92.25rem;
+        margin: 0 auto;
+    }
+}
+.footer__lightgreen{
+    background-color: 	hsl(158, 100%, 26%);
+    margin: 1rem 1.5rem -6.56rem 1.5rem;
+    padding: 2.81rem;
+    position: relative;
+    background-image: none;
+    max-width: 1490px;
+}
+@media (min-width: 61.93rem){
+    .footer__lightgreen{
+        background-image: url(../img/lightgreen-bg.svg);
+        background-repeat: no-repeat;
+        background-position: 90%;
+    }
+}
+.footer__lightgreen p{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    max-width: 550px;
+}
+@media (min-width: 40rem){
+    .footer__lightgreen p{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 61.06rem){
+    .footer__lightgreen p{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 61.93rem){
+    .footer__lightgreen p{
+        font-size: 1.82rem;
+    }
+}
+.footer__lightgreen__links p{
+    color: hsl(153, 36%, 63%);
+    font-size: 1rem;
+    margin-top: 1.56rem;
+}
+.footer__lightgreen p, .footer__lightgreen__links p{
+    font-weight: 500;
+    font-family: "Space500";
+}
+.footer__lightgreen__links a{
+    color: 	hsl(156, 36%, 89%);
+    font-weight: 300;
+    font-family: "Adelle300";
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+@media (min-width: 30rem){
+    .footer__lightgreen__links{
+        display: flex;
+        gap: 7%;
+        font-size: 1.1rem;
+        max-width: 550px;
+    }
+}
+@media (min-width: 40rem){
+    .footer__lightgreen__links p, .footer__lightgreen__links a{
+        font-size: 1.1rem;
+    }
+}
+.footer__darkgreen{
+    padding: 6rem 1.56rem 1.56rem 1.56rem;
+    background-color: hsl(166, 45%, 14%);
+    max-width: 1490px;
+}
+.footer__darkgreen span img{
+    width: 125px;
+    margin-top: 3rem;
+}
+.darkgreen__links1 h3, .darkgreen__links2 h3, .darkgreen__info h3{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Space600";
+    color: hsl(153, 36%, 63%);
+    margin: 3rem 0 1rem;
+}
+@media (min-width: 48rem){
+    .darkgreen__links1 h3, .darkgreen__links2 h3, .darkgreen__info h3{
+        font-size: 1.17rem;
+    }
+}
+.darkgreen__info h3{
+    margin: 3rem 0 0rem !important;
+}
+.darkgreen__links1 ul li, .darkgreen__links2 ul li{
+    height: 30px;
+    margin-bottom: 0.55rem;
+}
+.darkgreen__links1 ul li a, .darkgreen__links2 ul li a{
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 0.9rem;
+    font-family: "Adelle300";
+    font-weight: 300;
+}
+@media (min-width: 48rem){
+    .darkgreen__links1 ul li a, .darkgreen__links2 ul li a{
+        font-size: 1rem;
+    }
+}
+.darkgreen__links1 ul li a img, .darkgreen__links2 ul li a img{
+    width: 10px;
+    height: 10px;
+    margin-right: 0.7rem;
+}
+@media (min-width: 40rem){
+    .resizing-link1{
+        display: flex;
+        gap: 17%;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 90rem){
+    .resizing-link1{
+        display: flex;
+        gap: 15.6%;
+        flex-wrap: wrap;
+    }
+}
+.darkgreen__info ul{
+    color: hsl(0, 0%, 100%);
+}
+.darkgreen__info ul li{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: "Adelle300";
+    font-size: 0.9rem;
+}
+@media (min-width: 30rem){
+    .darkgreen__info ul li{
+        font-size: 1rem;
+    }
+}
+.darkgreen__info ul li svg{
+    margin-right: 1rem;
+}
+.darkgreen__info span a{
+    text-decoration: underline;
+}
+.darkgreen__info li span p{
+    margin: 0rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.footer__darkgreen p{
+    margin-top: 2.5rem;
+    color: 	hsl(165, 7%, 57%);
+    font-family: "Adelle300";
+    font-size: 0.85rem;
+    line-height: 1.56rem;
+}
+.footer__darkgreen p a{
+    text-decoration: underline;
+}
+/* Home Page */
+.section__intro__container{
+    margin: 1rem 1.5rem 0 1.5rem;
+    width: 100%;
+}
+@media (min-width: 96.25rem){
+    .section__intro__container{
+        max-width: 96.25rem;
+        margin: 0 auto;
+    }
+}
+.section__intro__container  h1{
+    font-size: 2.4rem;
+    line-height: normal;
+}
+@media (min-width: 48rem){
+    .section__intro__container h1{
+        font-size: 3.4rem;
+        padding: 0.37rem;
+    }
+}
+@media (min-width: 62rem){
+    .section__intro__container h1{
+        font-size: 3.55rem;
+    }
+}
+.section__intro__container p{
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-family: "Adelle300";
+}
+@media (min-width: 48rem){
+    .section__intro__container p{
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 62rem){
+    .section__intro__container p{
+        font-size: 1.23rem;
+        margin-top: 2.5rem;
+        line-height: 2.18rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__intro__container p{
+        width: 70%;
+    }
+}
+.section__intro__container img{
+    width: 100%;
+    margin-top: 2rem;
+}
+@media (min-width: 62rem){
+    .section__intro__container img{
+        width: 100%;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__intro__container img{
+        width: 100%;
+        height: 500px;
+        margin-top: 3rem;
+    }
+}
+/* Orange Tip Box */
+.tip__img{
+    position: absolute;
+}
+@media (min-width: 62rem){
+    .tip__img{
+        position: relative;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        justify-content: space-between;
+        margin-right: 3rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .tip__img{
+        width: 63%;
+        margin-top: 6rem;
+        margin-right: -3rem;
+    }
+}
+.tip__img img{
+    object-fit: cover;
+    height: 150px;
+    object-position: 50% 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+@media (min-width: 96.25rem){
+    .tip__img img{
+        max-width: 100%;
+        height: 340px;
+        margin-left: 4.3rem;
+    }
+}
+.section__tip__container{
+    background-color: hsl(16, 100%, 61%);
+    margin: 4.5rem 1.5rem 1rem 1.5rem;
+    max-width: 767px;
+    padding: 1.5rem;
+    height: auto;
+}
+@media (min-width: 47.93rem){
+    .section__tip__container{
+        padding: 2.18rem;
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width: 62rem){
+    .section__tip__container{
+        padding-top: 60%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__tip__container{
+        margin-left: 4rem;
+        padding: 3.43rem;
+        padding-top: 22%;
+    }
+}
+.top-resizing{
+    width: 300px;
+}
+@media (min-width: 96.25rem){
+    .top-resizing{
+        width: 100%;
+    }
+}
+.section__tip__container h3{
+    background-color: 	hsl(166, 45%, 14%);
+    color: hsl(0, 0%, 100%);
+    padding: 0.1rem;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+@media (min-width: 47.93rem){
+    .section__tip__container h3{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__tip__container h3{
+        font-size: 1.1rem;
+    }
+}
+.section__tip__container h4{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+@media (min-width: 47.93rem){
+    .section__tip__container h4{
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__tip__container h4{
+        font-size: 1.4rem;
+    }
+}
+.section__tip__container{
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-wrap: wrap;
+}
+.section__tip__container p{
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-family: "Adelle300";
+}
+@media (min-width: 47.93rem){
+    .section__tip__container p{
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__tip__container p{
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+.section__tip__container span{
+    display: flex;
+    align-items: center;
+}
+.section__tip__container span a{
+    margin-right: 0.5rem;
+    font-family: "Adelle500";
+}
+@media (min-width: 47.93rem){
+    .section__tip__container span a{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__tip__container p{
+        font-size: 1.07rem;
+    }
+}
+/* Resizing Tip and Intro */
+@media (min-width: 62rem){
+    .resizing-intro-tip{
+        display: flex;
+    }
+}
+@media (min-width: 96.25rem){
+    .resizing-intro-tip{
+        max-width: 96.25rem;
+        margin: 0 auto;
+    }
+}
+/* What We Do */
+.section__whatwedo__container{
+    margin: 1rem 1.5rem 0 1.5rem;
+    text-align: center;
+}
+@media (min-width: 62rem){
+    .section__whatwedo__container{
+        display: flex;
+        gap: 4rem;
+    }
+}
+@media (min-width: 62rem){
+    .whatwedo-resizing{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+}
+@media (min-width: 90rem){
+    .whatwedo-resizing{
+        justify-content: center;
+        width: 50%;
+    }
+}
+@media (min-width: 96.25rem){
+    .whatwedo-resizing{
+        text-align: left;
+        width: 50%;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__whatwedo__container{
+        max-width: 96.25rem;
+        margin-top: 5rem;
+        margin: 5rem auto 5rem auto;
+    }
+}
+.section__whatwedo__container h3{
+    color: hsl(158, 100%, 26%);
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Space500";
+}
+@media (min-width: 30rem){
+    .section__whatwedo__container h3{
+        font-size: 1.1rem;
+    } 
+}
+.section__whatwedo__container h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+    line-height: normal;
+}
+@media (min-width: 30rem){
+    .section__whatwedo__container h2{
+        font-size: 2rem;
+    } 
+}
+@media (min-width: 47.93rem){
+    .section__whatwedo__container h2{
+        font-size: 2.3rem;
+    } 
+}
+@media (min-width: 62rem){
+    .section__whatwedo__container h2{
+        font-size: 2.82rem;
+    }
+}
+/* What We Do Aptitude */
+.whatwedo__aptitude__title h3, .whatwedo__maintenance__title h3{
+    text-align: start;
+    font-size: 1.3rem;
+    color: hsl(16, 100%, 61%);
+    margin: 5rem 0 1rem;
+    font-family: "Space600";
+}
+@media (min-width: 48rem){
+    .whatwedo__aptitude__title h3, .whatwedo__maintenance__title h3{
+        font-size: 1.47rem;
+    }
+}
+/* What We Do Maintenance */
+.whatwedo__maintenance__title h3{
+    margin: 2rem 0 1rem;
+}
+@media (min-width: 30rem){
+    .whatwedo__maintenance__title h3, .whatwedo__maintenance__title h3{
+        margin: 5rem 0 1rem;
+        font-size: 1.3rem;
+    }
+}
+.section__whatwedo__maintenance a, .section__whatwedo__aptitude a{
+    color: hsl(0, 0%, 0%);
+    width: 275px;
+    margin-bottom: 1.37rem;
+    padding-bottom: 0.93rem;
+    border-bottom: 1px solid hsl(16,100%,61%);
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    text-align: start;
+    font-family: "Adelle300";
+}
+@media (min-width: 30rem){
+    .section__whatwedo__maintenance a, .section__whatwedo__aptitude a{
+        font-size: 1rem;
+    } 
+}
+@media (min-width: 48rem){
+    .section__whatwedo__maintenance a, .section__whatwedo__aptitude a{
+        font-size: 1.17rem;
+    }
+}
+.section__whatwedo__maintenance li, .section__whatwedo__aptitude li{
+    display: flex;
+    justify-content: space-between !important;
+}
+/* Aanleg en Onderhoud Resizing */
+@media (min-width: 30rem){
+    .aanleg-onderhoud{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+@media (min-width: 62rem){
+    .aanleg-onderhoud{
+        gap: 3rem;
+    }
+}
+@media (min-width: 90rem){
+    .aanleg-onderhoud{
+        gap: 8rem;
+    }
+}
+@media (min-width: 62rem){
+    .whatwedo__aptitude__title h3, .whatwedo__maintenance__title h3{
+        margin-top: 1rem;
+    }
+}
+/* Whe Are Schrauwen  */
+.section__who__container{
+    background-color: 	hsl(156, 36%, 89%);
+    box-sizing: content-box;
+    padding: 0 1.56rem 1.56rem 1.56rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    text-align: center;
+}
+@media (min-width: 96.25rem){
+    .section__who__container{
+        margin: 0 auto;
+        background-color: hsl(156, 36%, 89%);
+    }
+}
+.section__who__img{
+    position: relative;
+    top: -60px;
+}
+.section__who__img img{
+    object-fit: cover;
+    height: 325px;
+}
+.section__who__container h3{
+    color: 	hsl(158, 100%, 26%);
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-family: "Space500";
+    font-weight: inherit;
+}
+@media (min-width: 48rem){
+    .section__who__container h3{
+        font-size: 1.17rem;
+    }
+}
+.section__who__container h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+    line-height: normal;
+}
+@media (min-width: 48rem){
+    .section__who__container h2{
+        font-size: 2.3rem;
+    }
+}
+.section__who__container p{
+    margin: 2rem 0 2rem 0;
+    font-size: 0.93rem;
+    font-family: "Adelle300";
+    font-weight: 300;
+    line-height: 1.75rem;
+}
+@media (min-width: 48rem){
+    .section__who__container p{
+        font-size: 1rem;
+    }
+}
+.section__who__list a{
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 108, 55, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-family: "Adelle500";
+    font-weight: 600;
+    text-align: center;
+}
+@media (min-width: 48rem){
+    .section__who__list a{
+        font-size: 1.23rem;
+        margin-bottom: 2rem;
+    }
+}
+.section__who__list span a{
+    border-bottom: none;
+}
+/* Why Schrauwen Groen? */
+.section__why__container{
+    background-color: 	hsl(156, 36%, 89%);
+    box-sizing: content-box;
+    padding: 1.56rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 90rem){
+    .section__why__container{
+        padding-bottom: 6rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__why__container{
+        margin: 0 auto;
+        background-color: hsl(156, 36%, 89%);
+    }
+    .resizing{
+        max-width: 92.25rem;
+    }
+}
+.section__why__container h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: inherit;
+    width: 100%;
+}
+@media (min-width: 48rem){
+    .section__why__container h2{
+        width: 100%;
+    }
+}
+@media (min-width: 90rem){
+    .section__why__container h2{
+        font-size: 2.82rem;
+        margin-bottom: 3rem;
+    }
+}
+.section__why__list li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: hsl(16, 100%, 61%);
+    font-weight: bold;
+    font-family: "Space600";
+    font-weight: inherit;
+}
+@media (min-width: 48rem){
+    .section__why__list li{
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 90rem){
+    .section__why__list ul, .section__why__list li{
+        display: flex;
+        align-items: center;
+    }
+}
+.section__why__list li span{
+    font-size: 1rem;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 1rem;
+    font-family: "Adelle300";
+    font-weight: inherit;
+    font-size: 0.93rem;
+}
+@media (min-width: 48rem){
+    .section__why__list li span{
+        font-size: 1rem;
+    }
+}
+.section__why__list img{
+    width: 20px;
+    height: 20px;
+    margin-left: 47%;
+}
+@media (min-width: 90rem){
+    .section__why__list img{
+        margin: 0 3rem 0 3rem;
+        width: 25px;
+        height: 25px;
+    }
+}
+/* Total */
+.section__total__container{
+    background-color: 	hsl(166, 45%, 14%);
+    padding: 25px;
+}
+@media (min-width: 92.25rem){
+    .section__total__container{
+        margin: 0 auto;
+    }
+}
+.section__total__container h3{
+    color: hsl(156, 36%, 89%);
+    font-size: 1.1rem;
+    font-family: "Space500";
+    font-weight: inherit;
+}
+@media (min-width: 48rem){
+    .section__total__container h3{
+        font-size: 1.17rem;
+    }
+}
+.section__total__container h2{
+    font-size: 2rem;
+    color: hsl(16, 100%, 61%);
+    margin: 1rem 0 1rem 0;
+    font-family: "Space600";
+    font-weight: inherit;
+}
+@media (min-width: 48rem){
+    .section__total__container h2{
+        font-size: 2.3rem;
+    }
+}
+.section__total__container p{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1.5rem;
+    font-size: 0.93rem;
+    font-family: "Adelle300";
+    font-weight: inherit;
+    width: 91.5%;
+    line-height: 1.56rem;
+}
+@media (min-width: 48rem){
+    .section__total__container p{
+        font-size: 1rem;
+    }
+}
+.section__total__btn button{
+    font-size: 0.9rem;
+    background-color: hsl(16, 100%, 61%);
+    color: hsl(0, 0%, 100%);
+    padding: 0.93rem 1.56rem 0.93rem 1.56rem;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 8rem;
+    font-family: "Adelle500";
+    font-weight: 600;
+}
+@media (min-width: 48rem){
+    .section__total__btn button{
+        font-size: 1rem;
+    }
+}
+.section__total__btn button:hover{
+    background-color: hsl(16, 100%, 70%);
+}
+.section__total__img{
+    background-image: url(../img/dark-bg-pattern-rechts.svg);
+    background-position: 115% 115%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.section__total__img img{
+    width: 100%;
+    height: 22rem;
+    clip-path: polygon(0 0, 280px 0, 280px 140px, 385px 140px, 385px 350px, 70px 350px, 70px 280px, 0 280px);
+    object-fit: cover;
+    margin-bottom: 2.5rem;
+    margin-top: -0.12rem;
+}
+/* Slider */
+.section__slider__images{
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    overflow-y: hidden;
+    scroll-snap-type: inline mandatory;
+    padding: 0 0 1rem 0;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+.section__slider__images>*{
+    scroll-snap-align: start;
+    flex: 0 0 17rem;
+    border-bottom: 1px solid hsl(156, 34%, 59%);
+    padding-bottom: 0.8rem;
+}
+
+.section__slider__images img{
+    aspect-ratio: 5/6;
+    object-fit: cover;
+}
+.section__slider__container{
+    margin: 0 0 2rem 1.563rem;
+}
+.section__slider__container h2{
+    font-size: 2rem;
+    margin: 2rem 0 2rem 0;
+    line-height: 2.5rem;
+    color: hsl(166, 45%, 14%);
+}
+@media (min-width: 48rem){
+    .section__slider__container h2{
+        font-size: 2.3rem;
+    }
+}
+.section__slider__images a img{
+    margin-bottom: 2rem;
+}
+.section__slider__images li a span{
+    font-size: 0.82rem;
+    line-height: 1.25rem;
+    width: 100%;
+    font-family: "Adelle300";
+    font-weight: 300;
+}
+/* Our Workway */
+.section__workway__container{
+    padding: 3.75rem 1.56rem 0rem 1.56rem;
+    background-color: hsl(156, 36%, 89%);
+}
+@media (min-width: 62rem){
+    .section__workway__container{
+        width: 80%;
+        padding-top: 1rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__workway__container{
+        margin-top: 5rem;
+    }
+}
+.section__workway__container h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Space600";
+    font-weight: 600;
+}
+@media (min-width: 48rem){
+    .section__workway__container h2{
+        font-size: 2.3rem;
+    }
+}
+@media (min-width: 62rem){
+    .section__workway__container h2{
+        font-size: 2.82rem;
+    }
+}
+.section__workway__container p{
+    font-size: 0.93rem;
+    margin-bottom: 2rem;
+    font-family: "Adelle300";
+}
+@media (min-width: 48rem){
+    .section__workway__container p{
+        font-size: 1rem;
+    }
+}
+/* Therefore Schrauwen */
+.section__therefore__container{
+    padding: 0 1.56rem 2rem 1.56rem;
+    background-color: hsl(156, 36%, 89%);
+}
+@media (min-width: 62rem){
+    .section__therefore__container{
+        padding: 1rem 1.56rem 10rem 1.56rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .section__therefore__container{
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+}
+.section__therefore__title{
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.section__therefore__title h2{
+    font-size: 2rem;
+}
+@media (min-width: 48rem){
+    .section__therefore__title h2{
+        font-size: 2.3rem;
+    }
+}
+@media (min-width: 62rem){
+    .section__therefore__title h2{
+        font-size: 2.82rem;
+    }
+}
+.section__therefore__list li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+.section__therefore__list li{
+    display: flex;
+    font-size: 1rem;
+    border-bottom: 1px solid hsl(16, 100%, 61%);
+    padding: 1rem 0 1rem 0;
+    align-items: center;
+    font-family: "Adelle300";
+    font-weight: 300;
+}
+@media (min-width: 30rem){
+    .section__therefore__list li{
+        font-size: 1.1rem;
+    }
+}
+.section__therefore__list span li{
+    border: none !important;
+}
+.resizing-workway-therefore, .resizing-workway-therefore2{
+    position: relative;
+    padding-bottom: 20rem;
+    margin-bottom: -20.1rem;
+    background-color: hsl(156, 36%, 89%);
+}
+@media (min-width: 30rem){
+    .resizing-workway-therefore, .resizing-workway-therefore2{
+        padding-bottom: 10rem;
+        margin-bottom: -12rem;
+    }
+}
+@media (min-width: 62rem){
+    .resizing-workway-therefore{
+        display: flex;
+        background-color: hsl(156, 36%, 89%);
+        margin-bottom: -14rem; 
+    }
+}
+@media (min-width: 62rem){
+    .resizing-workway-therefore, .resizing-workway-therefore2{
+        background-color: hsl(156, 36%, 89%);
+        margin-bottom: -14rem; 
+    }
+}
+@media (min-width: 96.25rem){
+    .resizing-max{
+        max-width: 92.25rem;
+        display: flex;
+        margin: 0 auto -5rem auto;
+    }
+}
+@media (min-width: 96.25rem){
+    .resizing{
+        max-width: 92.25rem;
+        margin: 0 auto;
+    }
+}
+/* Contact Page */
+
+/* Header (Background) */
+.section__intro__contact, .section__intro__aanleg{
+    background-image: url(../img/contact-bg.jpeg);
+    margin-top: 2rem;
+    background-position: 0% 50%;
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+}
+@media (min-width: 62rem){
+    .section__intro__contact, .section__intro__aanleg{
+        height: 580px;
+    }
+}
+.intro__contact__nav, .intro__aanleg__nav{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    width: 150px;
+    padding: 0.7rem;
+    margin: 4.2rem 1.5rem 0rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-family: "Adelle300";
+}
+@media (min-width: 30rem){
+    .intro__contact__nav, .intro__aanleg__nav{
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 37.5rem){
+    .intro__contact__nav, .intro__aanleg__nav{
+        padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+        width: 220px;
+    }
+}
+.intro__contact__nav a, .intro__aanleg__nav a{
+    font-size: 0.88rem;
+}
+.intro__contact__nav img, .intro__aanleg__nav img{
+    margin: 0 0.5rem 0 0.5rem;
+}
+.section__intro__title{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.25rem;
+    max-width: 600px;
+    margin: 0 1.5rem 1rem 1.5rem;
+}
+@media (min-width: 37.5rem){
+    .section__intro__title{
+        padding: 0.625rem 3.125rem;
+        max-width: 700px;
+    }
+}
+.section__intro__title h1{
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+
+}
+@media (min-width: 48rem){
+    .section__intro__title h1{
+        font-size: 3.9rem;
+        margin: 1rem 0 2rem 0;
+    }
+}
+@media (min-width: 62rem){
+    .section__intro__title h1{
+        font-size: 4.2rem;
+    }
+}
+.section__intro__title p, .section__title__ref p{
+    font-size: 1rem;
+    font-family: "Adelle300";
+    font-weight: 300;
+    max-width: 900px;
+}
+@media (min-width: 37.5rem){
+    .section__intro__title p, .section__title__ref p{
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 48rem){
+    .section__intro__title p, .section__title__ref p{
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 62rem){
+    .section__intro__title p, .section__title__ref p{
+        font-size: 1.4rem;
+    }
+}
+/* Send us a message */
+.section__contactus__container{
+    background-color: 	hsl(156, 36%, 89%);
+    padding: 0 1.5rem 1rem 1.5rem;
+}
+@media (min-width: 30rem){
+    .section__contactus__container{
+        padding: 0 3.125rem 2rem 3.125rem;
+    }
+}
+@media (min-width: 48rem){
+    .section__contactus__container{
+        padding: 0 4.688rem 2rem 4.688rem;
+    }
+}
+@media (min-width: 62rem){
+    .section__contactus__container{
+        padding: 0 1.6rem 2rem 1.6rem;
+    }
+}
+@media (min-width: 90rem){
+    .section__contactus__container{
+        padding: 0 20.625rem 2rem 20.625rem;
+    }
+}
+@media (min-width: 92.25rem){
+    .section__contactus__container{
+        margin: 0 auto;
+    }
+}
+.contactus__intro{
+    margin: 3rem 0rem 1rem 0rem;
+}
+@media (min-width: 62rem){
+    .contactus__intro{
+        margin: 3rem 0rem 0rem 0rem;
+    }
+}
+.contactus__intro h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 48rem){
+    .contactus__intro h2{
+        font-size: 2.6rem;
+    }
+}
+@media (min-width: 62rem){
+    .contactus__intro h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+.contactus__intro p{
+    font-size: 0.93rem;
+    font-family: "Adelle300";
+    font-weight: 300;
+}
+@media (min-width: 48rem){
+    .contactus__intro p{
+        width: 450px;
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 90rem){
+    .contactus__intro p{
+        width: 500px;
+        font-size: 1.2rem;
+    }
+}
+/* I search information as */
+.contactus__search, .contactus__company, .contactus__province, .contactus__surname, .contactus__name, .contactus__tel, .contactus__mail, .contactus__message{
+    margin: 1rem 0 1rem 0;
+}
+@media (min-width: 48rem){
+    .contactus__search, .contactus__company, .contactus__province, .contactus__surname, .contactus__name, .contactus__tel, .contactus__mail, .contactus__message{
+        margin: 2rem 0 2rem 0;
+    }
+}
+@media (min-width: 62rem){
+    .contactus__search, .contactus__company, .contactus__province, .contactus__surname, .contactus__name, .contactus__tel, .contactus__mail, .contactus__message{
+        margin: 0.5rem 0 0.5rem 0;
+    }
+}
+.contactus__search span label, .contactus__company label, .contactus__province label, .contactus__surname label, .contactus__name label, .contactus__tel label, .contactus__mail label, .contactus__message label{
+    font-family: "Space600";
+    font-weight: 700;
+    font-size: 1rem;
+}
+@media (min-width: 48rem){
+    .contactus__search span label, .contactus__company label, .contactus__province label, .contactus__surname label, .contactus__name label, .contactus__tel label, .contactus__mail label, .contactus__message label{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+}
+.contactus__search span label span, .contactus__province label span, .contactus__surname label span, .contactus__name label span, .contactus__tel label span, .contactus__mail label span, .contactus__message label span{
+    color: hsl(16, 100%, 61%);
+}
+.contactus__search label input{
+    margin-right: 1.5rem;
+}
+@media (min-width: 48rem){
+    span.radio1, span.radio2, span.radio3{
+        font-size: 0.9rem;
+        font-family: "Space300";
+        font-weight: 400;
+    }
+}
+/* Companyname */
+.contactus__company input, .contactus__surname input, .contactus__name input, .contactus__tel input, .contactus__mail input, .contactus__message textarea{
+    padding: 0.625rem 0 0.625rem 0;
+    border-bottom: 1px solid;
+    border-color: transparent transparent hsl(0, 0%, 0%);
+    background-color: transparent;
+    font-size: 0.93rem;
+    font-family: "Adelle300";
+    font-weight: 300;
+    width: 100%;
+}
+.contactus__company input:focus, .contactus__surname input:focus, .contactus__name input:focus, .contactus__tel input:focus, .contactus__mail input:focus, .contactus__message textarea:focus{
+    border-color: transparent transparent hsl(194, 100%, 50%);
+}
+/* Province */
+.contactus__province__slc{
+    border: 2px solid hsl(0, 0%, 0%);
+    font-weight: 300;
+    font-family: "Adelle300";
+}
+@media (min-width: 62rem){
+    .contactus__province__slc{
+        font-size: 1.2rem;
+    }
+}
+.contactus__province__slc:focus{
+    border: 1px solid hsl(0, 0%, 47%);
+}
+/* Checkbox */
+@media (min-width: 62rem){
+    .contactus__check{
+        margin-top: 2rem;
+    }
+}
+.contactus__check label{
+    font-size: 0.9rem;
+    margin-left: 0.9rem;
+    font-family: "Adelle300";
+    font-weight: 400;
+}
+@media (min-width: 48rem){
+    .contactus__check label{
+        font-size: 1.2rem;
+    }
+}
+.contactus__check label a{
+    font-weight: bold;
+    border-bottom: 1px solid hsl(0, 100%, 50%);
+}
+/* Send button */
+.contact__btn{
+    margin: 3rem 1.5rem 4rem 0rem ;
+}
+@media (min-width: 30rem){
+    .contact__btn{
+        padding: 1rem 3.125rem 4rem 0rem;
+    }
+}
+.contact__btn button, .aanleg1 button{
+    padding: 0.75rem 1.375rem 0.75rem 1.375rem;
+    background-color: hsl(16, 100%, 61%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-family: "Adelle500";
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+@media (min-width: 48rem){
+    .contact__btn button, .aanleg1 button{
+        font-size: 1.1rem;
+    }
+}
+.contact__btn button:hover, .aanleg1 button:hover{
+    background-color: hsl(16, 100%, 70%);
+}
+/* Desktop Resizing Company and Search*/
+@media (min-width: 62rem){
+    .company__search{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width: 62rem){
+    .company__search{
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 62rem){
+    .contactus__company{
+        margin-right: -30rem;
+        width: 100%;
+    }
+}
+@media (min-width: 90rem){
+    .contactus__company{
+        margin-right: -24.5rem;
+        width: 100%;
+    }
+}
+/* Desktop Resizing Surname and Name*/ /* Desktop Resizing Tel and Mail*/
+@media (min-width: 62rem){
+    .surname__name, .tel__mail{
+        display: flex;
+        justify-content: space-between;
+        margin: 2.5rem 0 2.5rem 0;
+    }
+}
+@media (min-width: 62rem){
+    .contactus__name, .contactus__mail{
+        width: 49%;
+    }
+}
+@media (min-width: 62rem){
+    .contactus__surname, .contactus__tel{
+        width: 45%;
+    }
+}
+/* Aanleg Page */
+.help-cta-cnt{
+    display: flex;
+    justify-content: flex-end;
+}
+.help-cta{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 109px;
+    background-color: hsl(156, 36%, 89%);
+    justify-content: center;
+    align-items: center;
+}
+.help-cta h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Space500";
+}
+.help-cta a{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: "Adelle300";
+    text-decoration: underline;
+}
+.help-cta a img{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+.help-btn button{
+    background-color: hsl(158, 100%, 26%);
+    align-items: center;
+    display: flex;
+    border: none;
+    width: 75px;
+    height: 109px;
+    justify-content: center;
+}
+.help-btn button:hover{
+    background-color: hsl(158, 99%, 31%);
+}
+.help-btn button img{
+    width: 30px;
+    height: 30px;
+}
+/* Aanleg 4 img*/
+.aanleg__images{
+    margin: 4rem 1.5rem 2rem 1.5rem;
+}
+@media (min-width: 96.25rem){
+    .aanleg__images{
+        max-width: 96.25rem;
+        margin: 4rem auto;
+    }
+}
+@media (min-width: 30rem){
+    .aanleg__images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.aanleg1{
+    max-width: 500px;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+@media (min-width: 30rem){
+    .aanleg1{
+        margin: 1rem;
+        width: 40%;
+    }
+}
+@media (min-width: 60.625rem){
+    .aanleg1{
+        max-width: 370px;
+    }
+}
+@media (min-width: 62rem){
+    .aanleg1{
+        max-width: 600px;
+    }
+}
+.aanleg1 a img:hover{
+    transform: scale(1.1);
+}
+.aanleg1 img{
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+@media (min-width: 30rem){
+    .aanleg1 img{
+        object-fit: cover;
+        height: 250px;
+    }
+}
+@media (min-width: 62rem){
+    .aanleg1 img{
+        height: 450px;
+        width: 450px;
+    }
+}
+.aanleg1 h2{
+    font-size: 1.9rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 62rem){
+    .aanleg1 h2{
+        font-size: 2.82rem;
+    }
+}
+.aanleg1 p{
+    font-family: "Adelle300";
+    font-weight: 300;
+    font-size: 0.93rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 47.93rem){
+    .aanleg1 p{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 62rem){
+    .aanleg1 p{
+        font-size: 1.06rem;
+    }
+}
+/* Reference Block*/
+.reference__title h2{
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 1.5rem;
+}
+@media (min-width: 48rem){
+    .reference__title h2{
+        font-size: 2.3rem;
+    }
+}
+@media (min-width: 64rem){
+    .reference__title h2{
+        font-size: 2.82rem;
+    }
+}
+@media (min-width: 96.25rem){
+    .reference__title{
+        max-width: 96.25rem;
+        margin: 3rem auto;
+    }
+}
+.referentie__images{
+    margin: 1.5rem;
+}
+@media (min-width: 30rem){
+    .referentie__images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (min-width: 96.25rem){
+    .referentie__images{
+        max-width: 96.25rem;
+        margin: 4rem auto;
+    }
+}
+.reference-aanleg{
+    max-width: 500px;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+@media (min-width: 30rem){
+    .reference-aanleg{
+        margin: 1rem;
+        width: 30%;
+    }
+}
+@media (min-width: 60.625rem){
+    .reference-aanleg{
+        max-width: 370px;
+    }
+}
+@media (min-width: 62rem){
+    .reference-aanleg{
+        max-width: 600px;
+    }
+}
+.reference-aanleg p{
+    font-size: 0.82rem;
+    font-family: "Adelle300";
+    font-weight: 300;
+    padding-bottom: 1.125rem;
+    border-bottom: 1px solid hsl(156, 34%, 59%);
+    margin-top: 0.5rem;
+}
+.reference-aanleg img{
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+@media (min-width: 30rem){
+    .reference-aanleg img{
+        object-fit: cover;
+        height: 250px;
+    }
+}
+@media (min-width: 62rem){
+    .reference-aanleg img{
+        height: 450px;
+        width: 450px;
+    }
+}
+/* Reference Page */
+.section__intro__ref{
+    margin-top: 2rem;
+    width: 100%;
+    margin: 1.5rem;
+}
+@media (min-width: 92.25rem){
+    .section__intro__ref{
+        margin: 0 auto;
+    }
+}
+.section__title__ref h1{
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 48rem){
+    .section__title__ref h1{
+        font-size: 3.9rem;
+    }
+}
+@media (min-width: 62rem){
+    .section__title__ref h1{
+        font-size: 4.2rem;
+    }
+}
+.fast-nav{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 30rem){
+    .fast-nav span{
+        display: flex;
+    }
+}
+.fast-nav h3{
+    color: hsl(158, 100%, 26%);
+}
+.fast-nav a{
+    display: flex;
+    padding: 0.75rem;
+    background-color: hsl(156, 36%, 89%);
+    margin-bottom: 0.5rem;
+    font-family: "Space500";
+    font-weight: 500;
+    font-size: 1rem;
+    align-items: center;
+    width: 65%;
+}
+@media (min-width: 30rem){
+    .fast-nav a{
+        margin-right: 0.5rem;
+        max-width: 200px;
+    }
+}
+.fast-nav img{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
