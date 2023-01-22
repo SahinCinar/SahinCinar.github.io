@@ -43,6 +43,7 @@
   font-family: "Stolzl500";
   margin-top: 1rem;
   margin-bottom: 3rem;
+  max-width: 750px;
 }
 .container_detail span a p{
   display: flex;
