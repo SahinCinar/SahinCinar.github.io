@@ -1,0 +1,131 @@
+.container_categorie {
+  border: 1px solid white;
+  margin: 1rem;
+  font-family: "Stolzl500";
+}
+.categorie-top {
+  display: flex;
+  padding: 1.8rem 1.2rem;
+  gap: 2rem;
+  border-bottom: 1px solid white;
+}
+.categorie-top input[type="checkbox"] {
+  accent-color: black;
+  transform: scale(1.5);
+}
+.categorie-top label[for="gratis"] {
+  color: white;
+}
+.categorie_wheelchair {
+  display: flex;
+}
+.categorie_wheelchair label svg {
+  width: 20px;
+  margin-left: 0.5rem;
+}
+.categorie_gratis {
+  display: flex;
+  align-items: center;
+}
+.categorie_gratis label {
+  margin-left: 0.5rem;
+}
+/* 4 mid */
+.categorie-4mid ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.categorie-4mid li {
+  border: 1px solid white;
+  width: 100%;
+}
+.categorie-4mid li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+}
+.categorie-4mid li span a {
+  background-color: white;
+}
+.categorie-4mid li a:hover {
+  background-color: white;
+  color: black;
+}
+.categorie-4mid li a svg {
+  width: 20px;
+  fill: white;
+}
+.categorie-4mid li span a svg{
+  fill: black;
+}
+.categorie-4mid li svg:hover {
+  fill: black;
+}
+/* mid */
+.categorie-mid {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.categorie-mid ul li {
+  display: flex;
+  align-items: center;
+}
+.categorie-mid ul li a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.categorie-mid ul li svg {
+  fill: white;
+  width: 20px;
+  margin-right: 1rem;
+}
+/* switch buttons */
+.categorie-switch {
+  justify-content: flex-end;
+  display: flex;
+}
+.categorie-switch button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categorie-switch button svg {
+  width: 20px;
+}
+.categorie-switch .raster {
+  background-color: #e73c3c;
+}
+.categorie-switch .list {
+  fill: white;
+  background-color: transparent;
+}
+/* searchbar */
+.categorie_searchbar {
+  display: flex;
+
+  width: 100%;
+}
+.categorie_searchbar input {
+  max-width: 50rem;
+  min-width: 16rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-family: "Stolzl300";
+  background-color: black;
+  border: none;
+}
+.categorie_searchbar input::placeholder {
+  color: white;
+}

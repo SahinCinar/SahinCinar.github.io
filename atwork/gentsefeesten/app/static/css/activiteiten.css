@@ -1,0 +1,87 @@
+.activiteiten_container {
+  background-color: #e73c3c;
+  margin: 1rem;
+}
+@media (min-width: 48rem) {
+  .activiteiten_container {
+    display: flex;
+    height: 19.9rem;
+  }
+}
+@media (min-width: 90rem) {
+  .activiteiten_container {
+    height: 21.5rem;
+  }
+}
+.activiteiten_container img {
+  margin-left: -1px;
+  height: 75vw;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 48rem) {
+  .activiteiten_container img {
+    height: 20rem;
+    width: 35%;
+  }
+}
+@media (min-width: 90rem) {
+  .activiteiten_container img {
+    height: 21.6rem;
+  }
+}
+.activiteiten-text {
+  margin: 1.5rem;
+  width: 54%;
+}
+@media (min-width: 48rem) {
+  .activiteiten-text {
+    margin: 3rem;
+  }
+}
+@media (min-width: 90rem) {
+  .activiteiten-text {
+    margin: 5rem;
+  }
+}
+@media (min-width: 90rem) {
+  .activiteiten_container img {
+    height: 21.6rem;
+  }
+}
+.activiteiten-text h3 {
+  font-family: "Stolzl700";
+  color: black;
+  font-size: 1.5625rem;
+}
+@media (min-width: 48rem) {
+  .activiteiten-text h3 {
+    font-size: 2.1875rem;
+  }
+}
+@media (min-width: 90rem) {
+  .activiteiten-text h3 {
+    font-size: 3.125rem;
+  }
+}
+.activiteiten-text p {
+  font-size: 1.125rem;
+  color: black;
+  font-family: "Stolzl300";
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .activiteiten-text p + input {
+    font-size: 1.125rem;
+  }
+}
+.activiteiten-text input {
+  font-family: "Stolzl300";
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.activiteiten-text input::placeholder {
+  color: black;
+}

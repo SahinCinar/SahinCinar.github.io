@@ -1,0 +1,174 @@
+@media (min-width: 48rem) {
+  header {
+    background-position: top left;
+    height: 500px;
+    max-width: 1440px;
+  }
+}
+@media (min-width: 90rem) {
+  header {
+    height: 500px;
+    margin: 0 auto;
+  }
+}
+.header_hero {
+  height: 180px;
+}
+header a img {
+  width: 9rem;
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+}
+@media (min-width: 90rem) {
+  header a img {
+    width: 12rem;
+    top: 2rem;
+  }
+}
+.header_hero ul {
+  visibility: hidden;
+  font-family: "Stolzl500";
+}
+.header_hero ul li {
+  margin-right: 2.5rem;
+}
+@media (min-width: 90rem) {
+  .header_hero ul {
+    visibility: visible;
+    position: absolute;
+    display: flex;
+    top: 3.7rem;
+    left: 16rem;
+  }
+}
+.header_title-day {
+  font-family: "Stolzl700";
+  font-size: 1.1rem;
+  display: flex;
+  text-align: right;
+  margin-right: 1rem;
+  flex-direction: column;
+}
+.header_title-day h1 {
+  margin-bottom: 3rem;
+  background-color: black;
+  margin-right: 2rem;
+}
+@media (min-width: 48rem) {
+  .header_title-day h1 {
+    display: none;
+  }
+}
+.container_days {
+  margin-top: 3rem;
+  width: 100%;
+  display: none;
+}
+@media (min-width: 48rem) {
+  .container_days {
+    position: absolute;
+    top: 5.3rem;
+    right: -2rem;
+    display: block;
+  }
+}
+@media (min-width: 90rem) {
+  .container_days {
+    right: -13rem;
+    display: flex;
+    top: 7rem;
+  }
+}
+.container_days ul {
+  display: flex;
+  margin-left: -1rem;
+  color: black;
+  padding: 0;
+}
+
+.container_days .text-day, .text-day2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300 !important;
+  font-size: 1rem;
+  font-family: "Stolzl300";
+  color: black;
+}
+@media (min-width: 48rem) {
+  .container_days .text-day, .text-day2 {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 90rem) {
+  .container_days .text-day, .text-day2 {
+    font-size: 1.125rem;
+  }
+}
+.container_days ul li {
+  background-color: hsl(0, 78%, 57%);
+  border: 0.1px solid black;
+}.container_days ul span li{
+  background-color: black;
+
+}
+@media (min-width: 48rem) {
+  .container_days ul li a .text-day, .text-day2 {
+    width: 130px;
+    height: 110px;
+  }
+}
+@media (min-width: 90rem) {
+  .container_days ul li a .text-day, .text-day2 {
+    width: 120px;
+    height: 130px;
+  }
+}
+.container_days .text-day:hover {
+  background-color: black;
+  color: white;
+}
+.container_days  .text-day2:hover{
+  background-color: hsl(0, 78%, 57%);
+  color: black;
+}
+.container_days .text-day span, .text-day2 span {
+  font-family: "Stolzl700";
+  font-size: 1.375rem;
+}
+@media (min-width: 48rem) {
+  .container_days .text-day span, .text-day2 span {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 90rem) {
+  .container_days .text-day span {
+    font-size: 1.875rem;
+  }
+}
+.day_hamburger {
+  display: flex;
+  justify-content: flex-end;
+  width: 92%;
+  margin-bottom: 2.5rem;
+}
+.day_hamburger button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-family: "Stolzl500";
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.day_hamburger button svg {
+  width: 20px;
+}
+@media (min-width: 48rem) {
+  .day_hamburger {
+    display: none;
+  }
+}

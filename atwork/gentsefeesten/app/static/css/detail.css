@@ -1,0 +1,321 @@
+.detail_headtitle{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 64rem) {
+  .detail_headtitle-resizing {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.detail_headtitle h3{
+  font-family: "Stolzl500";
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+.detail_headtitle svg{
+  width: 55px;
+}
+.container_detail{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media (min-width: 48rem) {
+  .container_detail section {
+    display: flex;
+  }
+}
+.container_detail h1{
+  font-size: 2.1875rem;
+  font-family: "Stolzl700";
+}
+@media (min-width: 48rem) {
+  .container_detail h1 {
+    font-size: 2.5rem;
+  }
+}
+.container_detail p{
+  font-size: 1rem;
+  font-family: "Stolzl500";
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.container_detail span a p{
+  display: flex;
+  font-size: 1rem;
+  background-color: rgb(232, 60, 60);
+  color: black;
+  padding: 0.5rem;
+  font-family: "Stolzl300";
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.container_detail span a p:hover{
+  color: white;
+  fill: white;
+}
+.info_detail{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.info_detail img{
+  width: 100%;
+}
+@media (min-width: 64rem) {
+  .info_detail img {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
+    left: 34rem;
+  }
+}
+@media (min-width: 90rem) {
+  .info_detail img {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 43rem;
+    left: 53rem;
+  }
+}
+.info_detail p{
+ font-size: 1rem;
+ font-family: "Stolzl500";
+ display: flex;
+ flex-direction: column;
+ margin-top: 0.5rem;
+}
+@media (min-width: 48rem) {
+  .info_detail p {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 64rem) {
+  .info_detail p {
+    width: 50%;
+  }
+}
+.info_detail p a{
+  text-decoration: underline;
+}
+.info_detail svg{
+  width: 11em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  .info_detail svg {
+    display: none;
+  }
+}
+.detail_media ul{
+  display: flex;
+  padding: 0;
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+.detail_media ul li{
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.detail_media ul li:hover{
+  background-color: rgb(232, 60, 60);
+}
+.detail_media ul li a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail_media ul li a svg{
+  width: 30px;
+}
+.detail_reservatie{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 48rem) {
+  .detail_reservatie {
+    display: none;
+  }
+}
+.detail_reservatie h3{
+  font-family: "Stolzl500";
+  font-size: 1.5625rem;
+  margin-bottom: 1rem;
+}
+.detail_reservatie p{
+  font-family: "Stolzl300";
+  margin-top: 0.5rem;
+}
+.detail_reservatie p a{
+  text-decoration: underline;
+}
+.detail-map{
+  background-color: rgb(232, 60, 60);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  padding: 2rem;
+}
+.detail-map span p{
+  font-size: 1.125rem;
+  font-family: "Stolzl500";
+  display: flex;
+  padding: 1rem;
+  background-color: black;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.detail-map span p svg{
+  width: 15px;
+  margin-left: 0.5rem;
+}
+.detail-map p, .detail-map a{
+  margin-top: 0.5rem;
+  font-family: "Stolzl300";
+  color: black;
+}
+.detail-map a{
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+.detail-map button{
+  background-color: transparent;
+  border: 1px solid black;
+  font-family: "Stolzl700";
+  font-size: 1.125rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.detail_info_map img{
+  height: 13.5rem;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  .detail_info_map img {
+    height: 25rem;
+    max-width: 1440px;
+  }
+}
+@media (min-width: 48rem) {
+  .detail_info_map {
+    display: flex;
+  }
+}
+.detail_info_map{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+}
+.andere_evenementen{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+.andere_evenementen h3{
+  font-size: 1.5625rem;
+  font-family: "Stolzl700";
+}
+@media (min-width: 48rem) {
+  .andere_evenementen h3 {
+    font-size: 2.1875rem;
+  }
+}
+@media (min-width: 90rem) {
+  .andere_evenementen h3 {
+    font-size: 3.125rem;
+  }
+}
+.container_andere{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 1rem;
+  max-width: 1440px;
+}
+@media (min-width: 48rem) {
+  .container_andere {
+    display: flex;
+    padding: 0;
+  }
+}
+.container_andere p{
+  font-family: "Stolzl300";
+  margin-top: 0.5rem;
+}
+@media (min-width: 48rem) {
+  .container_andere p{
+    width: 30em;
+    padding: 1rem;
+    border-right: 1px solid white;
+  }
+}
+@media (min-width: 90rem) {
+  .container_andere p{
+    width: 50rem;
+    padding: 1rem;
+    border-right: 1px solid white;
+    font-size: 1.125rem;
+  }
+}
+.container_andere span p{
+  font-family: "Stolzl700";
+  font-size: 1.1875rem;
+}
+@media (min-width: 90rem) {
+  .container_andere span p{
+    font-size: 1.5rem;
+  }
+}
+.container_andere svg{
+  width: 25px;
+  position: relative;
+  left: 95.5%;
+  bottom: -1rem;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  padding-left: 0.5rem;
+}
+@media (min-width: 48rem) {
+  .container_andere svg{
+    visibility: hidden;
+  }
+}
+.container_andere-button{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+.container_andere-button button{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: "Stolzl500";
+  padding: 1rem;
+  font-size: 1.125rem;
+}
+.container_andere-button button:hover{
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}

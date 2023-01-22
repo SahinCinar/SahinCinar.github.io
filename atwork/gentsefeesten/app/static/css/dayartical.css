@@ -1,0 +1,133 @@
+.day_artical-titel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+}
+.day_artical-titel h2 {
+  font-family: "Stolzl700";
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 48rem) {
+  .day_artical-titel h2 {
+    font-size: 2.1875rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 90rem) {
+  .day_artical-titel h2 {
+    font-size: 3.125rem;
+    margin-bottom: 3rem;
+  }
+}
+.day_artical-titel h2 svg {
+  fill: white;
+  margin-left: 2rem;
+}
+.day_artical h2{
+  font-family: "Stolzl700";
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.day_artical h2 svg{
+  margin-left: 2rem;
+}
+@media (min-width: 48rem) {
+  .day_artical h2 {
+    font-size: 2.1875rem;
+  }
+}
+@media (min-width: 90rem) {
+  .day_artical h2 {
+    font-size: 3.125rem;
+  }
+}
+.day_artical ul {
+  padding: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.day_artical ul li img {
+  width: 100%;
+  height: 50vw;
+  border: 1px solid white;
+}
+@media (min-width: 48rem) {
+  .day_artical ul li img {
+    height: 25vw;
+    width: 50vw;
+  }
+}
+@media (min-width: 48rem) {
+  .day_artical ul span li img {
+    height: 31.5vw;
+    width: 50vw;
+  }
+}
+@media (min-width: 64rem) {
+  .day_artical ul li img {
+    height: 20vw;
+    width: 50vw;
+  }
+}
+@media (min-width: 64rem) {
+  .day_artical ul span li img {
+    height: 24vw;
+    width: 50vw;
+  }
+}
+.day_artical ul li a {
+  width: 100%;
+  height: 50%;
+}
+@media (min-width: 48rem) {
+  .day_artical ul span li {
+    margin-top: -3rem;
+  }
+}
+.day_artical-text {
+  position: relative;
+  top: -3.5rem;
+  background-color: black;
+  border: 1px solid white;
+  padding: 2rem;
+  width: 13rem;
+}
+.day_artical-text h3 {
+  font-family: "Stolzl500";
+  margin-bottom: 1rem;
+}
+.day_artical-text span p {
+  background-color: #e73c3c;
+  color: black;
+  font-family: "Stolzl300";
+  padding: 0.5rem;
+  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.day_artical-text p {
+  font-family: "Stolzl300";
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 48rem) {
+  .resizing-day-artical {
+    display: flex;
+    gap: 1rem;
+  }
+}
+@media (min-width: 64rem) {
+  .resizing-day-artical2 {
+    display: flex;
+    gap: 1rem;
+  }
+}

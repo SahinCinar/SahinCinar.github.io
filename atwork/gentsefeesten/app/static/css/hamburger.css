@@ -1,0 +1,116 @@
+/* Hamburger Menu */
+.nav{
+  right: 2rem;
+ top: 1.5rem;
+ position: absolute;
+ max-width: 100%;
+ width: 11%;
+ width: 60px; 
+}
+.nav li button{
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+}
+.menu {
+ position: fixed;
+ z-index: 1;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ top: 0;
+ background: #E73C3C;
+ display: none;
+ max-width: 1440px;
+}
+
+.menu.open {
+ display: block;
+ overflow-y: scroll;
+}
+.menu button svg{
+ width: 100px;
+}
+.search{
+ display: none;
+}
+.search button {
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+}
+@media (min-width: 48rem) {
+ .search {
+   right: 8rem;
+   top: 3rem;
+   position: absolute;
+   max-width: 100%;
+   width: 35px;
+   display: block;
+ }
+}
+.hamburger_head{
+ display: flex;
+ margin-top: 3rem;
+ margin-left: 1rem;
+ margin-right: 1rem;
+ align-items: flex-start;
+ justify-content: space-between;
+ margin-bottom: 6rem;
+}
+.hamburger_head a svg{
+ width: 150px;
+}
+.hamburger_head button{
+ background-color: transparent;
+ border: none;
+}
+.hamburger_head button img{
+ width: 35px;
+}
+.menu ul{
+ padding: 0;
+ margin-left: 1rem;
+ font-family: "Stolzl500";
+ text-decoration: none;
+ visibility: visible !important;
+}
+@media (min-width: 90rem){
+.header_hero ul {
+   visibility: visible;
+   position: absolute;
+   display: flex;
+   top: 3.7rem;
+   left: 16rem;}
+}
+@media (min-width: 48rem) {
+ .menu ul {
+   visibility: visible;
+   position: inherit;
+   display: block;
+ }
+}
+.menu ul span li a{
+ margin-bottom: 2rem;
+ display: flex;
+ align-items: center;
+}
+.menu ul span li img{
+ width: 15px;
+ position: initial;
+}
+.menu ul li{
+ margin-bottom: 2rem;
+ margin-left: 2rem;
+}
+.menu ul span li{
+ margin-left: 1rem !important;
+}
+.menu ul li a{
+ color: black;
+ font-size: 1.25rem;
+ margin-bottom: 2rem;
+}
+.menu ul li a:hover{
+ color: white;
+}
