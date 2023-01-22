@@ -154,7 +154,7 @@
         return `
           <li>
           <h3>${event.day_of_week} ${event.day} juli</h3>
-          <img src="${event.image?.thumb ? event.image.thumb : "static/img/artical-test.jpg"}" alt="test">
+          <img src="${event.image?.thumb ? event.image.thumb : "../static/img/artical-test.jpg"}" alt="test">
           <div class="artical_info">
           <h4>${event.title}</h4>
           <span>
@@ -244,7 +244,7 @@
         <path d="M10 23.766v-17.526l-4 2v17.528l4-2zM11.086 1.224c0.265-0.141 0.58-0.224 0.914-0.224s0.649 0.083 0.925 0.229l-0.011-0.005 7.086 3.542 7.106-3.552c0.26-0.133 0.568-0.211 0.894-0.211 1.104 0 1.998 0.894 2 1.997v22c0 0 0 0.001 0 0.001 0 0.779-0.445 1.453-1.095 1.784l-0.011 0.005-7.98 3.99c-0.265 0.141-0.58 0.224-0.914 0.224s-0.649-0.083-0.925-0.229l0.011 0.005-7.086-3.542-7.106 3.554c-0.26 0.133-0.568 0.211-0.894 0.211-1.105 0-2-0.895-2-2 0-0.001 0-0.002 0-0.003v0-22c0-0.778 0.445-1.453 1.095-1.783l0.011-0.005 7.98-3.988zM14 6.238v17.528l4 2v-17.526l-4-2zM22 8.238v17.528l4-2v-17.526l-4 2z"></path>
         </svg>DOWNLOAD FEESTPLAN</button>
         </div>
-      <img src="/static/img/googlemaps.png" alt="Google Maps">
+      <img src="../static/img/googlemaps.png" alt="Google Maps">
       </div>
       <div class="andere_evenementen">
             <h3>Andere Evenementen Van Deze Organisator</h3>
