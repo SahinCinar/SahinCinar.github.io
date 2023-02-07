@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="test.css" />
+    <!-- Html2Pdf  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+      integrity="sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .heading {
+        text-align: center;
+        color: #2f8d46;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 class="heading">Knokke 1</h2>
+
+    <!-- Form encrypted as text -->
+    <form id="form-print" enctype="text/plain" class="form-control">
+      <br />
+      <label for="subject">
+        <strong>Selecteer de werf: </strong>
+      </label>
+      <select class="form-control" id="subject" name="subject">
+        <option value="puurs">Puurs</option>
+        <option value="bornem1">Bornem 1</option>
+        <option value="bornem2">Bornem 2</option>
+        <option value="bornem2">Kapelle</option>
+        <option value="bornem2">Knokke 1</option>
+        <option value="bornem2">Knokke 2</option>
+        <option value="bornem2">Londerzeel 1</option>
+        <option value="bornem2">Londerzeel 2</option>
+      </select>
+      <br />
+      <label for="LB">
+        <strong>LB: </strong>
+      </label>
+      <input
+        class="form-control"
+        type="text"
+        id="lb"
+        name="LB"
+        placeholder="Enter LB"
+      />
+      <br />
+
+      <label for="Berm">
+        <strong>Berm: </strong>
+      </label>
+      <input
+        class="form-control"
+        type="text"
+        id="berm"
+        name="Berm"
+        placeholder="Enter Berm"
+      />
+      <br />
+
+      <!-- <label for="subject">
+        <strong>Select Subject: </strong>
+      </label>
+      <select class="form-control" id="subject" name="subject">
+        <option value="Web">Web development</option>
+        <option value="App">App development</option>
+        <option value="Others">Others</option>
+      </select> -->
+      <label for="Kiezel">
+        <strong>Kiezel: </strong>
+      </label>
+      <input
+        class="form-control"
+        type="text"
+        id="kiezel"
+        name="Kiezel"
+        placeholder="Enter Kiezel"
+      />
+      <br />
+      <label for="Beton">
+        <strong>Beton: </strong>
+      </label>
+      <input
+        class="form-control"
+        type="text"
+        id="beton"
+        name="Beton"
+        placeholder="Enter Beton"
+      />
+      <br />
+      <label for="message">
+        <strong>Extra Opmerkingen</strong>
+      </label>
+      <textarea
+        class="form-control"
+        id="message"
+        name="message"
+        placeholder="Schrijf hier je Opmerkingen"
+        style="height: 100px"
+      >
+      </textarea>
+      <br />
+
+      <input
+        type="button"
+        class="btn btn-primary"
+        onclick="GeneratePdf();"
+        value="GeneratePdf"
+      />
+    </form>
+    <a href="puurs.html">Puurs</a>
+    <a href="bornem1.html">Bornem1</a>
+    <a href="bornem2.html">Bornem2</a>
+    <a href="kapelle.html">Kapelle op den bos</a>
+    <a href="knokke1.html">Knokke1</a>
+    <a href="knokke2.html">Knokke2</a>
+    <a href="londerzeel1.html">londerzeel1</a>
+    <a href="londerzeel2.html">londerzeel2</a>
+    <script>
+      // Function to GeneratePdf
+      function GeneratePdf() {
+        var element = document.getElementById("form-print");
+        html2pdf(element);
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+a {
+  font-size: 25px;
+  margin: 1rem 1rem;
+}
+.puurs-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.cement {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+.cement input {
+  width: 50%;
+}
+.puurs-elm {
+  display: flex;
+  justify-content: center;
+}
+.puurs-elm form {
+  display: flex;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container button {
+  max-width: 100px;
+}
