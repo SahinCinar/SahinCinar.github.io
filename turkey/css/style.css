@@ -3567,7 +3567,7 @@ ul.blog-post-meta li .icon {
   font-weight: 500;
   line-height: 1.38889;
   background-color: #ffffff;
-  color: #9b9b9b;
+  color: #8B0000;
   transition: all 0.3s ease-in-out;
 }
 
@@ -6436,7 +6436,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-dropdown-link {
-  color: #9b9b9b;
+  color: #8B0000;
 }
 
 .rd-navbar-static .rd-dropdown-link:hover {
@@ -6459,7 +6459,7 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-megamenu-list li > a,
 .rd-navbar-static .rd-megamenu-list li > a:focus,
 .rd-navbar-static .rd-megamenu-list li > a:active {
-  color: #9b9b9b;
+  color: #8B0000;
 }
 
 .rd-navbar-static .rd-navbar-dropdown li > a:hover,
@@ -7057,7 +7057,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-panel {
-  color: #9b9b9b;
+  color: #8B0000;
   background: #444141;
 }
 
@@ -7084,12 +7084,12 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-nav-link {
-  color: #9b9b9b;
+  color: #8B0000;
 }
 
 .rd-navbar-fixed .rd-megamenu-list > li > a,
 .rd-navbar-fixed .rd-navbar-dropdown > li > a {
-  color: #9b9b9b;
+  color: #8B0000;
 }
 
 .rd-navbar-fixed .rd-megamenu-list > li:hover > a,
@@ -7123,7 +7123,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-submenu-toggle {
-  color: #9b9b9b;
+  color: #8B0000;
 }
 
 .rd-navbar-fixed .rd-navbar-search .rd-search-form-submit {
@@ -7149,7 +7149,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar-fixed .rd-navbar-collapse,
 .rd-navbar-fixed .rd-navbar-collapse a {
-  color: #9b9b9b;
+  color: #8B0000;
 }
 
 html.rd-navbar-fixed-linked .page {
