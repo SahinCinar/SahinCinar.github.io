@@ -5326,18 +5326,6 @@ html [class*="section-"].section-bottom-0 {
 .bg-gray-1-decor {
   position: relative;
 }
-
-.bg-gray-1-decor:before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  bottom: calc(100% - 2px);
-  height: 65px;
-  background-image: url("../images/decor-gray-top.png");
-}
-
 /*
 * Dark Backgrounds
 */
