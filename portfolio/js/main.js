@@ -28,14 +28,16 @@ const ambientLight = new THREE.AmbientLight(0x000000);
 scene.add(pointLight, ambientLight);
 // Bg
 
-const spaceTexture = new THREE.TextureLoader().load('../images/bg.jpg');
+const spaceTexture = new THREE.TextureLoader().load('../portfolio/bg.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const sahinTexture = new THREE.TextureLoader().load('../images/sahin.png');
+const sahinTexture = new THREE.TextureLoader().load('../portfolioimages/sahin.png');
 
-const sahin = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 0), new THREE.MeshBasicMaterial({ map: sahinTexture }));
+const sahin = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 0), new THREE.MeshBasicMaterial({
+  map: sahinTexture
+}));
 
 scene.add(sahin);
 
@@ -61,10 +63,12 @@ moveCamera();
 
 function addStars() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 12);
-  const material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
+  const material = new THREE.MeshBasicMaterial({
+    color: 0xffffff
+  });
   const star = new THREE.Mesh(geometry, material);
 
-  const [x, y, z] = Array(3) .fill() .map(() => THREE.MathUtils.randFloatSpread(150));
+  const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(150));
 
   star.position.set(x, y, z);
   scene.add(star);
