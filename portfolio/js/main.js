@@ -28,12 +28,12 @@ const ambientLight = new THREE.AmbientLight(0x000000);
 scene.add(pointLight, ambientLight);
 // Bg
 
-const spaceTexture = new THREE.TextureLoader().load('../portfolio/bg.jpg');
+const spaceTexture = new THREE.TextureLoader().load('../portfolio/images/bg.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const sahinTexture = new THREE.TextureLoader().load('../portfolioimages/sahin.png');
+const sahinTexture = new THREE.TextureLoader().load('../portfolio/images/sahin.png');
 
 const sahin = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 0), new THREE.MeshBasicMaterial({
   map: sahinTexture
